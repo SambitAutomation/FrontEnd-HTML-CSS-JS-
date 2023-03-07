@@ -1,0 +1,886 @@
+//                 -------------     CSS         -------------
+
+-> CSS stands for Cascading Style Sheet.
+-> It is used to control the style of a web document in a simple & easy way
+-> CSS to control the style and layout of multiple Web pages all at once
+-> There are 3 ways of inserting a style Sheet
+   1. External style Sheet
+   2.Internal Style Sheet
+   3.Inline Style 
+
+-> External Style Sheet
+---------------------------
+   // eg:--
+   <html>
+    <head>
+
+        <title></title>
+
+        <link rel="stylesheet" type="text/css" href="D:\HTML & CSS - 2023\style.css">
+    
+    </head>
+
+    <body>
+
+        <h2> Welcome To This World (0!0) </h2>
+    </body>
+</html>
+
+
+-> Internal Style Sheet 
+---------------------------
+// eg:--
+
+<html>
+    <head>
+        <title></title>
+             <style>
+                h2{
+                    color: black;
+                }
+             </style>
+    </head>
+
+    <body>
+        <h2> Welcome To This World (0!0) </h2>
+    </body>
+</html>
+
+-> Inline Style 
+---------------------------
+// eg:- 
+
+<html>
+    <head>
+
+        <title></title>
+    </head>
+
+    <body>
+
+        <h2 style="color: green;"> Welcome To This World (0!0) </h2>
+    </body>
+</html>
+
+
+//          --------------------------------------------
+
+// CSS Id and Class
+
+-> The class selector is used to specify a style for a group of elements.
+-> The id selector is used to specify a style for a single. unique element.
+
+
+// Example for Id :- 
+/// On html code
+------------------
+<html>
+    <head>
+
+        <title></title>
+
+        <link rel="stylesheet" type="text/css" href="D:\HTML & CSS - 2023\style.css">
+        
+    </head>
+
+    <body>
+
+        <h2 id ="myFIrstID"> Welcome To This World (0!0) </h2>
+    </body>
+</html>
+
+/// On CSS code
+------------------
+#myFIrstID{
+    color: blue;
+}
+
+// Example for Class :- 
+/// On html code
+------------------
+<html>
+    <head>
+
+        <title></title>
+
+        <link rel="stylesheet" type="text/css" href="D:\HTML & CSS - 2023\style.css">
+        
+    </head>
+
+    <body>
+
+        <h2 class ="myFIrstID"> Welcome To This World (0!0) </h2>
+    </body>
+</html>
+
+/// On CSS code
+------------------
+.myFIrstID{
+    color: pink;
+}
+
+ ----------------------------------------------------------------------------
+
+ // CSS Background Property
+
+ -> With CSS, a color is most often specified by:
+ -> a valid color name - like "red"
+ -> a HEX value - like "#ff0000"
+ -> an RGB value - like "rgb(255,0,0)"
+
+ -> background-color = for to fill the color through out the region
+ -> background-image = provide the image for that particular class/id 
+
+ -> To fill through out the browser
+ code:- 
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+ -> To put background image
+  background-image : url('.....');
+
+ -> To set image repeat or not repeating
+   background-repeat: repeat or no-repeat;
+   
+-> To set background image size in vertical & horizontal 
+background-size: 100% 100%;
+
+-> To set the background image attachment ( Used to control the scrolling of  an image in th bg) 
+   background-attachment : fixed ;
+
+  
+// Example for background :- 
+//code of html
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title></title>
+
+        <link rel="stylesheet" type="text/css" href="D:\HTML & CSS - 2023\style.css">
+        
+             <!-- <style>
+                h2{
+                    color: black;
+                }
+             </style> -->
+    </head>
+
+    <body>
+
+        <div class="backimg"> </div>
+
+        <p>Off the Edge is not a book about conspiracy theories, exactly. 
+            It does get there, but really it is a book about the history of the Flat
+             Earth movement as the sort of original conspiracy theory. 
+             It is the second such book, in fact; Christine Garwood wrote Flat Earth:
+              The History of an Infamous Idea in 2007. But it is a whole different world now
+              s well-researched and makes for quick and entertaining, if disturbing, reading.</p>
+              <div class="backimgs"> </div>
+            </body>
+</html>
+
+// code of css
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.backimg{
+    width: 100%;
+    height: 100vh;
+    /* background-color: green; */
+    background-image: url('wild_dog_L-icon.jpg');
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.backimgs{
+    width: 100%;
+    height: 100vh;
+    /* background-color: green; */
+    background-image: url('bhoot-police_carousel_AD.jpg');
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+//          ----------------------------------------------------------------------------
+
+//   Font CSS 
+
+-> The font-family property is used to change the face of a font. 
+-> The font-style is used to make a font italic or oblique.
+-> The font-variant property is used to create a small-caps effect.
+-> The font-size property sets the size of the text.
+-> The font-weight property specifies the weight of a font. 
+
+// eg :- 
+Code of HTML :
+-------------
+<html>
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Golos+Text&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <p id="fontCSS"> Welcome To This World... </p>
+
+            </body>
+</html>
+
+Code Of CSS :--
+-------------
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#fontCSS{
+
+    font-family: 'Climate Crisis', cursive;
+    font-variant: small-caps;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+//            ----------------------------------------------------------------------------
+
+//        Text CSS 
+
+-> The color property is used to set the color of a text. [ color]
+-> The direction property is used to set the text direction Possible values are ltr or rtl. [ direction]
+
+-> The letter spacing property is used to add or subtract space between the letters that
+   make up a word. [ letter-spacing ]
+-> The word-spacing property is used to indent the text of a paragraph. [ word-spacing ]
+-> text-align property is used to align the text of a document. [ text-align ] ( left, right, center )
+
+-> [ text-indent ] means it will give some space before starting the sentences.
+-> [ text-transform ] means it will change the case of letters in upper / lower cases.
+
+// Example :- 
+HTML code :- 
+------------ 
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Golos+Text&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <p id="textCSS"> Welcome To This World... </p>
+
+            </body>
+</html>
+
+CSS Code :- 
+-------------- 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#textCSS{
+
+    font-family: 'Climate Crisis', cursive;
+    color: red;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    direction: ltr;
+    text-indent: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+//            ----------------------------------------------------------------------------
+
+//   Links CSS 
+
+-> The ":link" signifies unvisited hyperlinks.
+-> The ":visited" signifies visited hyperlinks.
+-> The ":hover" signifies an element that currently has the user's mouse pointer hovering over it.
+-> The ":active" signifies an element on which that user is currently clicking.
+
+// Example :- 
+HTML Code :- 
+------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <b> <a href="https://www.google.com/" target="_blank"> This is a Link</a> </b>
+
+            </body>
+</html>
+
+CSS Code :- 
+---------- 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Not Visited Link */
+a:link{
+ color: red;
+}
+
+/*  Visited Link */
+a:visited{
+    color: green;
+   }
+
+   /* Mousen Hover Link */
+a:hover{
+    color: yellow;
+   }
+
+   /* Selected Link */
+a:link{
+    color: blue;
+   }
+
+//            ----------------------------------------------------------------------------
+
+//           Borders CSS 
+
+-> The border properties allow you to specify how the border of the box
+representing an element should look.
+
+-> The border-color Specifies the color of a border.
+
+-> The border-style Specifies whether a border should be solid, dashed
+line, double line, or one of the other possible values.
+
+->The border-width Specifies the width of a border.
+
+-> The border-radius remove the edges of the specified area. 
+
+// Example :- 
+HTML Code :- 
+------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="BorderCSS"> </div>
+            </body>
+</html>
+
+CSS Code :- 
+----------
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.BorderCSS{
+    width: 300px;
+    height: 500px;
+    background-color: red;
+    border-width: 5px;
+    border-color: black;
+    border-style: dotted;
+    border-radius: 100px;
+}
+
+//            ----------------------------------------------------------------------------
+
+//  List CSS 
+
+-> The list-style-type allows to control the shape or apperance of the marker.
+
+// Example :- 
+HTML Code :- 
+------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <ul>
+            
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            </ul>
+
+        <ol>
+            <li>About</li>
+            <li>About</li>
+            <li>About</li>
+        </ol>    
+            </body>
+</html>
+
+CSS Code
+----------
+ul{
+    list-style-type: circle;
+}
+
+ol{
+    list-style-type: lower-alpha ;
+}
+
+//            ----------------------------------------------------------------------------
+
+//  Box Model CSS
+
+-> Content - The content of the box, where text and images appear
+->Padding - Clears an area around the content. The padding is
+transparent
+->Border - A border that goes around the padding and content
+->Margin - Clears an area outside the border. The margin is transparent
+
+// Example :- 
+HTML Code : 
+----------- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="boxModel">
+            <label>UserName</label>
+            <input id="Username" placeholder="Type Your UserName">
+        </div>
+
+        
+    </body>
+</html>
+
+CSS Code : - 
+----------- 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.boxModel{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    
+}
+
+input{
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+
+//            ----------------------------------------------------------------------------
+
+//   Scrollbars
+
+-> Visible- Allows the content to overflow the borders of its containing
+element.
+
+-> Hidden-The content of the nested element is simply cut off at the
+border of the containing element and no scrollbars is visible.
+
+-> Scroll-The size of the containing element does not change, but the
+scrollbars are added to allow the user to scroll to see the content.
+
+-> Auto-The purpose is the same as scroll, but the scrollbar will be shown
+only if the content does overflow.
+
+// Example :- 
+HTML Code : - 
+---------- 
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+         <p>
+            IMDb (an abbreviation of Internet Movie Database)[2] is an online database of 
+            information related to films, television series, podcasts, home videos, video games,
+             and streaming content online – including cast, production crew and personal 
+             biographies, plot summaries, trivia, ratings, and fan and critical reviews. 
+             IMDb began as a fan-operated movie database on the Usenet group "rec.arts.movies" 
+             in 1990, and moved to the Web in 1993. Since 1998, it is now owned and operated by 
+             IMDb.com, Inc., a subsidiary of Amazon.
+
+
+</p>
+
+        
+    </body>
+</html>
+
+CSS Code : - 
+--------------- 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    width: 200px;
+    height: 300px;
+    border: 2px solid red;
+    overflow: scroll;
+}
+
+//            ----------------------------------------------------------------------------
+
+//        Postioning CSS 
+
+-> A relative positioned element is positioned relative to its normal position. 
+-> A absolute position element is positioned relative to the first parent element that has a
+   position other than static.
+
+   // Example :- 
+   HTML Code :- 
+   ------------ 
+
+   <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+         <div class="father">
+            <div class="child1">child1</div>
+            <div class="child2">child2</div>
+            <div class="child3">child3</div>
+            <div class="child4">child4</div>
+         </div>    
+
+        
+    </body>
+</html>
+
+CSS Code :- 
+----------- 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.father{
+    width: 600px;
+    height: 400px;
+    background-color: red;
+    position: relative;
+}
+
+.child1{
+    width: 100px;
+    height: 60px;
+    background-color: green;
+    position: absolute;
+    left: 0;
+}
+
+.child2{
+    width: 100px;
+    height: 60px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+}
+
+.child3{
+    width: 100px;
+    height: 60px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+}
+
+.child4{
+    width: 100px;
+    height: 60px;
+    background-color: brown;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+//           ----------------------------------------------------------------------------
+
+//  Z-Index
+
+* The z-index property specifies the stack order of an element.
+
+* An element with greater stack order is always in front of an element
+with a lower stack order.
+
+* Note: z-index only works on positioned elements (position:absolute,
+position:relative, or position:fixed).
+
+// Example :- 
+HTML Code :- 
+---------- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+         <div class="father">
+            <div class="child1">child1</div>
+            <div class="child2">child2</div>
+            <div class="child3">child3</div>
+            <div class="child4">child4</div>
+         </div>    
+
+        
+    </body>
+</html>
+
+CSS Code :- 
+------------ 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.father{
+    width: 600px;
+    height: 400px;
+    background-color: red;
+    position: relative;
+}
+
+.child1{
+    width: 100px;
+    height: 60px;
+    background-color: green;
+    position: absolute;
+    z-index: 3;
+}
+
+.child2{
+    width: 100px;
+    height: 60px;
+    background-color: yellow;
+    position: absolute;
+    z-index: 1;
+}
+
+.child3{
+    width: 100px;
+    height: 60px;
+    background-color: blue;
+    position: absolute;
+    z-index: 2;
+}
+
+.child4{
+    width: 100px;
+    height: 60px;
+    background-color: brown;
+    position: absolute;
+   z-index: 4;
+}
+//           ----------------------------------------------------------------------------
+
+//       CSS Float
+
+-> left - The element Floats to the left of its container.
+-> right - The element Floats to the right of its container.
+
+// Example :- 
+HTML Code :- 
+------------ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+         <div class="Header">
+            <div class="logo">Sambit</div>
+            <div class="Menu">Menu</div>
+            
+         </div>    
+
+        
+    </body>
+</html>
+
+CSS Code :- 
+----------- 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Header{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+.logo{
+    width: 30%;
+    line-height: 400px;
+    text-align: center;
+    background-color: pink;
+    float: left;
+}
+
+.Menu{
+    width: 70%;
+    line-height: 400px;
+    background-color: blue;
+    float: right;
+}
+
+//           ----------------------------------------------------------------------------
+
+//    CSS Display
+
+* The display property is the most important CSS property for controlling
+layout.
+
+* Every HTML element has a default display value depending on what
+type of element it is.
+
+* The default display value for most elements is block or inline or inline-block.
+
+// Example :- 
+HTML Code :- 
+-------------- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+         <div class="Header">
+            <div class="logo">Sambit</div>
+            <div class="Menu">
+                <ul> 
+                    <li> Home </li>
+                    <li> Home </li>
+                    <li> Home </li> 
+                </ul>
+            </div>
+            
+         </div>    
+
+        
+    </body>
+</html>
+
+CSS Code :- 
+----------- 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Header{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+.logo{
+    width: 30%;
+    line-height: 200px;
+    text-align: center;
+    background-color: pink;
+    float: left;
+}
+
+.Menu{
+    width: 70%;
+    line-height: 200px;
+    background-color: red;
+    float: right;
+}
+
+ul{
+    list-style: none;
+    text-align: right;
+}
+
+li{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 0 10px;
+    margin: 20px;
+
+}
+
+//           ----------------------------------------------------------------------------
+
+//       Cursors 
+
+-> The cursor property of CSS allows you to specify the type of cursor that should be displayed
+   to the user.
+
+// Example :- 
+
+HTML Code :- 
+---------- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        
+        <div style="cursor:auto">Auto</div>
+        <div style="cursor:crosshair">Crosshair</div>
+        <div style="cursor: default">Default</div>
+        <div style="cursor: pointer">Pointer</div>
+        <div style="cursor: move">Move</div>
+        <div style="cursor: e-resize">E-Resize</div>
+        <div style="cursor: ne-resize">ne-Resize</div>
+        <div style="cursor: nw-resize">nw-Resize</div>
+        <div style="cursor: n-resize">n-Resize</div>
+        <div style="cursor: se-resize">se-Resize</div>
+        <div style="cursor: sw-resize">sw-Resize</div>
+        <div style="cursor: s-resize">s-Resize</div>
+        <div style="cursor: w-resize">w-Resize</div>
+        <div style="cursor: text">Text</div>
+        <div style="cursor: wait">Wait</div>
+        <div style="cursor: help">Help</div>
+   
+
+
+        
+    </body>
+</html>
+
